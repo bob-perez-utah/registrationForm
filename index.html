@@ -21,22 +21,66 @@
         <h1>Register</h1>
 
         <form action="" method="">
-            <label>First Name: </label>
-            <input name="firstname" type="text" placeholder="First Name" required>
+            <label for="firstname" >First Name: </label>
+            <input id="firstname" type="text" placeholder="First Name" required>
 
-            <label>Last Name: </label>
-            <input name="lastname" type="text" placeholder="Last Name" required>
+            <label for="lastname" >Last Name: </label>
+            <input id="lastname" type="text" placeholder="Last Name" required>
+            <div></div>
+
+            <label for="male">Male</label>      
+            <input name="gender" id="male" type="radio" value="MALE">
             
-            <label>Male</label>      
-            <input name="gender" id="male" type="radio"
+            <label for="female">Female</label>
+            <input name="gender" id="female" type="radio" value="FEMALE">
+
+            <label for="other">Other</label>
+            <input name="gender" id="other" type="radio" value="OTHER">
+
+            <div></div>
+
+            <label for="email">Email: </label>
+            <input id="email" type="email" placeholder="your e-mail" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="your password" required>
+
+            <div></div>
+
+            <label for="Birthday: ">Birthday: </label>
+
+            <select name="birthday">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+
+            </select>
+
+            <select name="birthday">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+
+            </select>
+
+            <select name="birthday">
+                <option value="1957">1957</option>
+                <option value="1958">1958</option>
+                <option value="1959">1959</option>
+                <option value="1960">1960</option>
+
+            </select>
+
+
+
+
+            <div></div>
+            <div></div>
             
-            <label>Female</label>
-            <input name="gender" id="female" type="radio">
-
-            <label>Other</label>
-            <input name="gender" id="other" type="radio">
-
-
+            
+            
             <input type="submit" value="Submit">
 
         </form>
